@@ -56,7 +56,12 @@
 	  </nav>
     <!-- END nav -->
     <!--img class="image"src="images/Omnia-Yoga-Image-A-Logo.jpg"alt="Omnia-Yoga-Image-A-Logo" style="width: 100%; flex: auto;"-->
-    <img srcset="images/Omnia-Yoga-Image-A-Logo-Cut.jpg 873w,images/Omnia-Yoga-Image-A-Logo.jpg 1772w"  src = "images/Omnia-Yoga-Image-A-Logo-Cut.jpg" class="omniaimage" alt="yoga-o" style="height: 90vh; width: 100vw; object-fit: contain;">
+    <picture>
+      <source media="(max-width: 1500)" srcset="images/Omnia-Yoga-Image-A-Logo-Cut.jpg">
+      <source media="(min-width: 1501)" srcset="images/Omnia-Yoga-Image-A-Logo.jpg">
+      <img src="images/Omnia-Yoga-Image-A-Logo.jpg" alt="Omnia-Yoga-Image-A-Logo" style="height: 90vh; width: 100vw; object-fit: contain;" />
+    </picture>
+
 
     <section class="ftco-section bg-light">
 			<div class="container">
